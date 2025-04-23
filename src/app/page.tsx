@@ -50,7 +50,7 @@ export default function Home() {
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-semibold mb-4 text-center">Bloom Boutique</h1>
+      <h1 className="text-2xl font-semibold mb-4 text-center">Together We Bloom</h1>
 
       <div className="flex flex-col md:flex-row items-center justify-between mb-4">
         <Input
