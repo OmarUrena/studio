@@ -86,7 +86,7 @@ export default function Home() {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {products.map((product) => (
                 <Card key={product.id} className="overflow-hidden rounded-lg shadow-md transition-transform hover:scale-105">
-                  <CardHeader>
+                  <CardHeader className="h-16">
                     <CardTitle>{product.name}</CardTitle>
                   </CardHeader>
                   <img
@@ -97,8 +97,8 @@ export default function Home() {
                       (e.target as HTMLImageElement).classList.add('opacity-100');
                     }}
                   />
-                  <CardContent>
-                    <CardDescription>{product.description}</CardDescription>
+                  <CardContent className="h-40">
+                    <CardDescription className="h-24 overflow-hidden">{product.description}</CardDescription>
                     <CardDescription>Tipo: {product.type}</CardDescription>
                     <CardDescription>Precio: ${product.price.toFixed(2)}</CardDescription>
                   </CardContent>
@@ -113,3 +113,4 @@ export default function Home() {
     </div>
   );
 }
+
