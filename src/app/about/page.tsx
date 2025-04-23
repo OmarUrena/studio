@@ -13,33 +13,35 @@ const AboutPage = () => {
       image: 'https://picsum.photos/id/300/600/400',
     },
     {
-      title: 'Our Mission',
+      title: 'Misión',
       description:
-        'To brighten lives through the beauty of flowers, creating memorable moments and lasting impressions.',
+        'Crear experiencias únicas e innovadoras en el mundo floral, mediante arreglos que transmiten emociones y resalten la belleza natural de nuestro país.',
       image: 'https://picsum.photos/id/301/600/400',
     },
     {
-      title: 'Our Vision',
+      title: 'Visión',
       description:
-        'To be the leading flower provider, recognized for our quality, creativity, and commitment to customer satisfaction.',
+        'Ser conocidos como una floristería ejemplar e innovadora que combina la creatividad, la calidad y la delicadeza de las flores para satisfacer las necesidades del cliente.',
       image: 'https://picsum.photos/id/302/600/400',
     },
     {
-      title: 'Our Values',
+      title: 'Valores',
       descriptionList: [
-        'Quality: We source only the finest flowers.',
-        'Creativity: We offer unique and innovative floral designs.',
-        'Customer Satisfaction: We are dedicated to exceeding customer expectations.',
-        'Sustainability: We are committed to eco-friendly practices.',
+        'Amor',
+        'Compañerismo',
+        'Amistad',
+        'Bondad',
+        'Respeto',
+        'Puntualidad'
       ],
       image: 'https://picsum.photos/id/303/600/400',
     },
     {
-      title: 'Contact Information',
+      title: 'Información de Contacto',
       contactInfo: {
-        address: '123 Flower Street, Cityville, State',
-        phone: '(555) 123-4567',
-        email: 'info@bloomboutique.com',
+        address: 'Calle 3, Barrio Los Santos, Santiago de los Caballeros, Rep. Dom.',
+        phone: '(829) 228-7796',
+        email: 'togetherbebloom333@gmail.com',
       },
       image: 'https://picsum.photos/id/304/600/400',
     },
@@ -59,7 +61,7 @@ const AboutPage = () => {
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-semibold mb-4 text-center">About Bloom Boutique</h1>
+      <h1 className="text-2xl font-semibold mb-4 text-center">Conócenos</h1>
 
       {cardData.map((card, index) => (
         <motion.div
@@ -95,8 +97,8 @@ const AboutPage = () => {
                   </ul>
                 ) : card.contactInfo ? (
                   <div>
-                    <CardDescription>Address: {card.contactInfo.address}</CardDescription>
-                    <CardDescription>Phone: {card.contactInfo.phone}</CardDescription>
+                    <CardDescription>Dirección: {card.contactInfo.address}</CardDescription>
+                    <CardDescription>Teléfono: {card.contactInfo.phone}</CardDescription>
                     <CardDescription>Email: {card.contactInfo.email}</CardDescription>
                   </div>
                 ) : null}

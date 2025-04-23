@@ -52,7 +52,12 @@ export default function Home() {
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-semibold mb-4 text-center">Together We Bloom</h1>
+      <h1 className="text-3xl font-semibold mb-4 text-center" style={{
+        color: '#d6ac59',
+        fontFamily: 'Arial, cursive',
+        textShadow: '1px 1px 2px rgba(0, 0, 0, 0.1)',
+        letterSpacing: '1.2px'
+      }}>Together We Bloom</h1>
 
       <Button onClick={() => setShowCatalog(!showCatalog)} className="mb-4 rounded-full">
         {showCatalog ? 'Go to About Page' : 'Go to Catalog'}
@@ -109,3 +114,4 @@ export default function Home() {
     </div>
   );
 }
+
