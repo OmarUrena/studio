@@ -15,19 +15,20 @@ interface Product {
   price: number;
   image: string;
   type: string;
+  description: string;
 }
 
 const productsData: Product[] = [
-  { id: 1, name: 'Classic Roses Bouquet', price: 29.99, image: 'https://picsum.photos/id/237/300/200', type: 'Roses' },
-  { id: 2, name: 'Tulip Delight', price: 24.99, image: 'https://picsum.photos/id/238/300/200', type: 'Tulips' },
-  { id: 3, name: 'Sunflower Radiance', price: 19.99, image: 'https://picsum.photos/id/239/300/200', type: 'Sunflowers' },
-  { id: 4, name: 'Orchid Elegance', price: 39.99, image: 'https://picsum.photos/id/240/300/200', type: 'Orchids' },
-  { id: 5, name: 'Daisy Fresh Bunch', price: 14.99, image: 'https://picsum.photos/id/241/300/200', type: 'Daisies' },
-  { id: 6, name: 'Lily White Bouquet', price: 34.99, image: 'https://picsum.photos/id/242/300/200', type: 'Lilies' },
-  { id: 7, name: 'Mixed Spring Flowers', price: 27.99, image: 'https://picsum.photos/id/243/300/200', type: 'Mixed' },
-  { id: 8, name: 'Carnation Classic', price: 17.99, image: 'https://picsum.photos/id/244/300/200', type: 'Carnations' },
-  { id: 9, name: 'Hydrangea Harmony', price: 31.99, image: 'https://picsum.photos/id/245/300/200', type: 'Hydrangeas' },
-  { id: 10, name: 'Peony Perfection', price: 44.99, image: 'https://picsum.photos/id/246/300/200', type: 'Peonies' },
+  { id: 1, name: 'Classic Roses Bouquet', price: 29.99, image: 'https://picsum.photos/id/237/300/200', type: 'Roses', description: 'A timeless bouquet of red roses, perfect for expressing love and passion.' },
+  { id: 2, name: 'Tulip Delight', price: 24.99, image: 'https://picsum.photos/id/238/300/200', type: 'Tulips', description: 'A vibrant mix of colorful tulips that brings joy and freshness to any space.' },
+  { id: 3, name: 'Sunflower Radiance', price: 19.99, image: 'https://picsum.photos/id/239/300/200', type: 'Sunflowers', description: 'Bright and cheerful sunflowers that capture the essence of summer.' },
+  { id: 4, name: 'Orchid Elegance', price: 39.99, image: 'https://picsum.photos/id/240/300/200', type: 'Orchids', description: 'An elegant orchid arrangement that adds a touch of sophistication to any setting.' },
+  { id: 5, name: 'Daisy Fresh Bunch', price: 14.99, image: 'https://picsum.photos/id/241/300/200', type: 'Daisies', description: 'A cheerful bunch of daisies that brings a breath of fresh air and simple beauty.' },
+  { id: 6, name: 'Lily White Bouquet', price: 34.99, image: 'https://picsum.photos/id/242/300/200', type: 'Lilies', description: 'A stunning bouquet of white lilies, symbolizing purity and renewal.' },
+  { id: 7, name: 'Mixed Spring Flowers', price: 27.99, image: 'https://picsum.photos/id/243/300/200', type: 'Mixed', description: 'A colorful mix of spring flowers that captures the beauty and vibrancy of the season.' },
+  { id: 8, name: 'Carnation Classic', price: 17.99, image: 'https://picsum.photos/id/244/300/200', type: 'Carnations', description: 'A classic arrangement of carnations, known for their beauty and long-lasting freshness.' },
+  { id: 9, name: 'Hydrangea Harmony', price: 31.99, image: 'https://picsum.photos/id/245/300/200', type: 'Hydrangeas', description: 'A harmonious arrangement of hydrangeas, known for their lush blooms and soft colors.' },
+  { id: 10, name: 'Peony Perfection', price: 44.99, image: 'https://picsum.photos/id/246/300/200', type: 'Peonies', description: 'A perfect bouquet of peonies, symbolizing romance and prosperity.' },
 ];
 
 export default function Home() {
@@ -52,15 +53,12 @@ export default function Home() {
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-3xl font-semibold mb-4 text-center" style={{
-        color: '#d6ac59',
-        fontFamily: 'Sloop Script Pro, cursive',
-        textShadow: '1px 1px 2px rgba(0, 0, 0, 0.1)',
-        letterSpacing: '1.2px'
-      }}>Together <span style={{ fontFamily: 'Migra, sans-serif' }}>We Bloom</span></h1>
+      <div className="flex justify-center">
+        <img src="/images/logo.png" alt="Together We Bloom Logo" className="h-50 w-auto mb-4" />
+      </div>{/* Add an onLoad event handler to the image to fade it in once it's loaded. The class 'opacity-100' should be added to the image element when it is loaded. */}
 
       <Button onClick={() => setShowCatalog(!showCatalog)} className="mb-4 rounded-full">
-        {showCatalog ? 'Go to About Page' : 'Go to Catalog'}
+        {showCatalog ? 'Ir a la página de información' : 'Ir al catálogo'}
       </Button>
 
       {showCatalog ? (
@@ -68,18 +66,18 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center justify-between mb-4">
             <Input
               type="text"
-              placeholder="Search products..."
-              className="mb-2 md:mb-0 md:w-1/3 rounded-full"
+              placeholder="Buscar productos..."
+              className="mb-2 md:mb-0 md:w-1/3 rounded-full bg-white"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
             <Select onValueChange={setSortBy}>
-              <SelectTrigger className="md:w-52 rounded-full">
-                <SelectValue placeholder="Sort by" />
+              <SelectTrigger className="md:w-52 rounded-full bg-white">
+                <SelectValue placeholder="Ordenar por" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="priceAsc">Price: Low to High</SelectItem>
-                <SelectItem value="priceDesc">Price: High to Low</SelectItem>
+                <SelectItem value="priceAsc">Precio: Menor a Mayor</SelectItem>
+                <SelectItem value="priceDesc">Precio: Mayor a Menor</SelectItem>
               </SelectContent>
             </Select>
           </div>
@@ -100,8 +98,9 @@ export default function Home() {
                     }}
                   />
                   <CardContent>
-                    <CardDescription>Type: {product.type}</CardDescription>
-                    <CardDescription>Price: ${product.price.toFixed(2)}</CardDescription>
+                    <CardDescription>{product.description}</CardDescription>
+                    <CardDescription>Tipo: {product.type}</CardDescription>
+                    <CardDescription>Precio: ${product.price.toFixed(2)}</CardDescription>
                   </CardContent>
                 </Card>
               ))}
@@ -114,4 +113,3 @@ export default function Home() {
     </div>
   );
 }
-
