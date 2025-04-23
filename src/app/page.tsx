@@ -19,16 +19,126 @@ interface Product {
 }
 
 const productsData: Product[] = [
-  { id: 1, name: 'Classic Roses Bouquet', price: 29.99, image: 'https://picsum.photos/id/237/300/200', type: 'Roses', description: 'A timeless bouquet of red roses, perfect for expressing love and passion.' },
-  { id: 2, name: 'Tulip Delight', price: 24.99, image: 'https://picsum.photos/id/238/300/200', type: 'Tulips', description: 'A vibrant mix of colorful tulips that brings joy and freshness to any space.' },
-  { id: 3, name: 'Sunflower Radiance', price: 19.99, image: 'https://picsum.photos/id/239/300/200', type: 'Sunflowers', description: 'Bright and cheerful sunflowers that capture the essence of summer.' },
-  { id: 4, name: 'Orchid Elegance', price: 39.99, image: 'https://picsum.photos/id/240/300/200', type: 'Orchids', description: 'An elegant orchid arrangement that adds a touch of sophistication to any setting.' },
-  { id: 5, name: 'Daisy Fresh Bunch', price: 14.99, image: 'https://picsum.photos/id/241/300/200', type: 'Daisies', description: 'A cheerful bunch of daisies that brings a breath of fresh air and simple beauty.' },
-  { id: 6, name: 'Lily White Bouquet', price: 34.99, image: 'https://picsum.photos/id/242/300/200', type: 'Lilies', description: 'A stunning bouquet of white lilies, symbolizing purity and renewal.' },
-  { id: 7, name: 'Mixed Spring Flowers', price: 27.99, image: 'https://picsum.photos/id/243/300/200', type: 'Mixed', description: 'A colorful mix of spring flowers that captures the beauty and vibrancy of the season.' },
-  { id: 8, name: 'Carnation Classic', price: 17.99, image: 'https://picsum.photos/id/244/300/200', type: 'Carnations', description: 'A classic arrangement of carnations, known for their beauty and long-lasting freshness.' },
-  { id: 9, name: 'Hydrangea Harmony', price: 31.99, image: 'https://picsum.photos/id/245/300/200', type: 'Hydrangeas', description: 'A harmonious arrangement of hydrangeas, known for their lush blooms and soft colors.' },
-  { id: 10, name: 'Peony Perfection', price: 44.99, image: 'https://picsum.photos/id/246/300/200', type: 'Peonies', description: 'A perfect bouquet of peonies, symbolizing romance and prosperity.' },
+  {
+    id: 1, 
+    name: 'Caja Amor Eterno',
+    price: 44.99,
+    image: '/images/catalog/1.jpg',
+    type: 'Rosas en caja',
+    description: 'Rosas rojas en caja elegante con chocolates Ferrero y una tarjeta personalizada.'
+  },
+  {
+    id: 2,
+    name: 'Ramo Dulce Encanto',
+    price: 32.50,
+    image: '/images/catalog/2.jpg',
+    type: 'Ramos mixtos',
+    description: 'Ramo de girasoles y margaritas, envuelto en papel kraft, acompañado de una mini caja de chocolates.'
+  },
+  {
+    id: 3,
+    name: 'Taza Floral de Buenos Días',
+    price: 19.99,
+    image: '/images/catalog/3.jpg',
+    type: 'Detalles florales',
+    description: 'Taza personalizada con mensaje y arreglo de flores pequeñas dentro.'
+  },
+  {
+    id: 4,
+    name: 'Peluchito con Rosas',
+    price: 27.99,
+    image: '/images/catalog/4.jpg',
+    type: 'Rosas y peluches',
+    description: 'Peluche mediano acompañado de 6 rosas rojas envueltas con lazo decorativo.'
+  },
+  {
+    id: 5,
+    name: 'Caja Tropical',
+    price: 36.75,
+    image: '/images/catalog/5.jpg',
+    type: 'Arreglos exóticos',
+    description: 'Arreglo en caja con flores exóticas como heliconias, aves del paraíso y lirios.'
+  },
+  {
+    id: 6,
+    name: 'Bouquet "Te pienso"',
+    price: 31.00,
+    image: '/images/catalog/6.jpg',
+    type: 'Ramos románticos',
+    description: 'Ramo romántico con rosas rosadas, paniculata y eucalipto, con sobre perfumado.'
+  },
+  {
+    id: 7,
+    name: 'Combo Enamorado',
+    price: 49.99,
+    image: '/images/catalog/7.jpg',
+    type: 'Combos de regalo',
+    description: 'Arreglo mixto con globo, chocolates y peluche pequeño, ideal para enamorados.'
+  },
+  {
+    id: 8,
+    name: 'Caja "Gracias por tanto"',
+    price: 28.95,
+    image: '/images/catalog/8.jpg',
+    type: 'Cajas de agradecimiento',
+    description: 'Flores mixtas en tonos pastel en caja decorativa con tarjeta de agradecimiento.'
+  },
+  {
+    id: 9,
+    name: 'Mini Bouquet para Detalle',
+    price: 14.99,
+    image: '/images/catalog/9.jpg',
+    type: 'Mini ramos',
+    description: 'Pequeño ramo con 3 flores a elegir, papel decorativo y sticker temático.'
+  },
+  {
+    id: 10,
+    name: 'Arreglo en Canasta Rústica',
+    price: 39.50,
+    image: '/images/catalog/10.jpg',
+    type: 'Canastas florales',
+    description: 'Canasta con flores silvestres, lavanda y follaje, ideal para decorar.'
+  },
+  {
+    id: 11,
+    name: 'Ramo de Tulipanes Premium',
+    price: 42.99,
+    image: '/images/catalog/11.jpg',
+    type: 'Tulipanes',
+    description: 'Tulipanes de colores en envoltura elegante con lazo satinado.'
+  },
+  {
+    id: 12,
+    name: 'Caja "Feliz Cumpleaños"',
+    price: 46.00,
+    image: '/images/catalog/12.jpg',
+    type: 'Cumpleaños',
+    description: 'Caja decorativa con rosas, chocolates, globo y mini botella de vino o jugo gourmet.'
+  },
+  {
+    id: 13,
+    name: 'Florero Primaveral',
+    price: 34.20,
+    image: '/images/catalog/13.jpg',
+    type: 'Arreglos en florero',
+    description: 'Arreglo variado en florero de vidrio, ideal para regalar a domicilio.'
+  },
+  {
+    id: 14,
+    name: 'Kit "Relájate con Flores"',
+    price: 24.80,
+    image: '/images/catalog/14.jpg',
+    type: 'Regalos de bienestar',
+    description: 'Mini ramo, vela aromática, bolsita de té y tarjeta con frase relajante.'
+  },
+  {
+    id: 15,
+    name: 'Centro de Mesa Elegante',
+    price: 37.99,
+    image: '/images/catalog/15.jpg',
+    type: 'Centros de mesa',
+    description: 'Arreglo plano en base baja con rosas, lirios y follaje, ideal para eventos.'
+  }
 ];
 
 export default function Home() {
@@ -92,7 +202,7 @@ export default function Home() {
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-48 object-cover rounded-t-md transition-opacity duration-300 opacity-0 animate-fade-in"
+                    className="w-full h-48 object-cover rounded-t-md"
                     onLoad={(e: React.SyntheticEvent<HTMLImageElement>) => {
                       (e.target as HTMLImageElement).classList.add('opacity-100');
                     }}
@@ -100,7 +210,7 @@ export default function Home() {
                   <CardContent className="h-40">
                     <CardDescription className="h-24 overflow-hidden">{product.description}</CardDescription>
                     <CardDescription>Tipo: {product.type}</CardDescription>
-                    <CardDescription>Precio: ${product.price.toFixed(2)}</CardDescription>
+                    <CardDescription>Precio: <strong>${product.price.toFixed(2)}</strong></CardDescription>
                   </CardContent>
                 </Card>
               ))}
