@@ -22,7 +22,7 @@ const productsData: Product[] = [
   {
     id: 1, 
     name: 'Caja Amor Eterno',
-    price: 44.99,
+    price: 2000.00,
     image: '/images/catalog/1.jpg',
     type: 'Rosas en caja',
     description: 'Rosas rojas en caja elegante con chocolates Ferrero y una tarjeta personalizada.'
@@ -30,7 +30,7 @@ const productsData: Product[] = [
   {
     id: 2,
     name: 'Ramo Dulce Encanto',
-    price: 32.50,
+    price: 1000.00,
     image: '/images/catalog/2.jpg',
     type: 'Ramos mixtos',
     description: 'Ramo de girasoles y margaritas, envuelto en papel kraft, acompañado de una mini caja de chocolates.'
@@ -38,7 +38,7 @@ const productsData: Product[] = [
   {
     id: 3,
     name: 'Taza Floral de Buenos Días',
-    price: 19.99,
+    price: 300.00,
     image: '/images/catalog/3.jpg',
     type: 'Detalles florales',
     description: 'Taza personalizada con mensaje y arreglo de flores pequeñas dentro.'
@@ -46,7 +46,7 @@ const productsData: Product[] = [
   {
     id: 4,
     name: 'Peluchito con Rosas',
-    price: 27.99,
+    price: 1500.00,
     image: '/images/catalog/4.jpg',
     type: 'Rosas y peluches',
     description: 'Peluche mediano acompañado de 6 rosas rojas envueltas con lazo decorativo.'
@@ -54,7 +54,7 @@ const productsData: Product[] = [
   {
     id: 5,
     name: 'Caja Tropical',
-    price: 36.75,
+    price: 2500.00,
     image: '/images/catalog/5.jpg',
     type: 'Arreglos exóticos',
     description: 'Arreglo en caja con flores exóticas como heliconias, aves del paraíso y lirios.'
@@ -62,7 +62,7 @@ const productsData: Product[] = [
   {
     id: 6,
     name: 'Bouquet "Te pienso"',
-    price: 31.00,
+    price: 700.00,
     image: '/images/catalog/6.jpg',
     type: 'Ramos románticos',
     description: 'Ramo romántico con rosas rosadas, paniculata y eucalipto, con sobre perfumado.'
@@ -70,7 +70,7 @@ const productsData: Product[] = [
   {
     id: 7,
     name: 'Combo Enamorado',
-    price: 49.99,
+    price: 2500.00,
     image: '/images/catalog/7.jpg',
     type: 'Combos de regalo',
     description: 'Arreglo mixto con globo, chocolates y peluche pequeño, ideal para enamorados.'
@@ -78,7 +78,7 @@ const productsData: Product[] = [
   {
     id: 8,
     name: 'Caja "Gracias por tanto"',
-    price: 28.95,
+    price: 1800.00,
     image: '/images/catalog/8.jpg',
     type: 'Cajas de agradecimiento',
     description: 'Flores mixtas en tonos pastel en caja decorativa con tarjeta de agradecimiento.'
@@ -86,7 +86,7 @@ const productsData: Product[] = [
   {
     id: 9,
     name: 'Mini Bouquet para Detalle',
-    price: 14.99,
+    price: 500.00,
     image: '/images/catalog/9.jpg',
     type: 'Mini ramos',
     description: 'Pequeño ramo con 3 flores a elegir, papel decorativo y sticker temático.'
@@ -94,7 +94,7 @@ const productsData: Product[] = [
   {
     id: 10,
     name: 'Arreglo en Canasta Rústica',
-    price: 39.50,
+    price: 1300.00,
     image: '/images/catalog/10.jpg',
     type: 'Canastas florales',
     description: 'Canasta con flores silvestres, lavanda y follaje, ideal para decorar.'
@@ -102,7 +102,7 @@ const productsData: Product[] = [
   {
     id: 11,
     name: 'Ramo de Tulipanes Premium',
-    price: 42.99,
+    price: 1500.00,
     image: '/images/catalog/11.jpg',
     type: 'Tulipanes',
     description: 'Tulipanes de colores en envoltura elegante con lazo satinado.'
@@ -110,7 +110,7 @@ const productsData: Product[] = [
   {
     id: 12,
     name: 'Caja "Feliz Cumpleaños"',
-    price: 46.00,
+    price: 1700.00,
     image: '/images/catalog/12.jpg',
     type: 'Cumpleaños',
     description: 'Caja decorativa con rosas, chocolates, globo y mini botella de vino o jugo gourmet.'
@@ -118,7 +118,7 @@ const productsData: Product[] = [
   {
     id: 13,
     name: 'Florero Primaveral',
-    price: 34.20,
+    price: 2500.00,
     image: '/images/catalog/13.jpg',
     type: 'Arreglos en florero',
     description: 'Arreglo variado en florero de vidrio, ideal para regalar a domicilio.'
@@ -126,7 +126,7 @@ const productsData: Product[] = [
   {
     id: 14,
     name: 'Kit "Relájate con Flores"',
-    price: 24.80,
+    price: 800.00,
     image: '/images/catalog/14.jpg',
     type: 'Regalos de bienestar',
     description: 'Mini ramo, vela aromática, bolsita de té y tarjeta con frase relajante.'
@@ -134,10 +134,26 @@ const productsData: Product[] = [
   {
     id: 15,
     name: 'Centro de Mesa Elegante',
-    price: 37.99,
+    price: 2000.00,
     image: '/images/catalog/15.jpg',
     type: 'Centros de mesa',
     description: 'Arreglo plano en base baja con rosas, lirios y follaje, ideal para eventos.'
+  },
+  {
+    id: 16,
+    name: 'Arreglo para Baby Shower',
+    price: 2800.00,
+    image: '/images/catalog/16.jpg',
+    type: 'Arreglo de bebe',
+    description: 'Arreglo con peluche, globo de felicitaciones, flores blancas.'
+  },
+  {
+    id: 17,
+    name: 'Corona fúnebre',
+    price: 5000.00,
+    image: '/images/catalog/17.jpg',
+    type: 'Arreglo fúnebre',
+    description: 'Corona fúnebre con rosas y margaritas rojo vino, lirios y tulipanes.'
   }
 ];
 
@@ -196,7 +212,7 @@ export default function Home() {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {products.map((product) => (
                 <Card key={product.id} className="overflow-hidden rounded-lg shadow-md transition-transform hover:scale-105">
-                  <CardHeader className="h-16">
+                  <CardHeader className="h-16 mb-3">
                     <CardTitle>{product.name}</CardTitle>
                   </CardHeader>
                   <img
