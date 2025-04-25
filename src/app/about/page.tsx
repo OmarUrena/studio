@@ -10,19 +10,19 @@ const AboutPage = () => {
       title: 'Sobre nosotros',
       description:
         'Somos una floristería donde ofrecemos flores frescas, plantas y detalles decorativos para todo tipo de ocasiones, brindando belleza y emoción a través del lenguaje de las flores.',
-      image: 'https://picsum.photos/id/300/600/400',
+      image: 'images/about/team.jpg',
     },
     {
       title: 'Misión',
       description:
         'Crear experiencias únicas e innovadoras en el mundo floral, mediante arreglos que transmiten emociones y resalten la belleza natural de nuestro país.',
-      image: 'https://picsum.photos/id/301/600/400',
+      image: 'images/about/mission.jpg',
     },
     {
       title: 'Visión',
       description:
         'Ser conocidos como una floristería ejemplar e innovadora que combina la creatividad, la calidad y la delicadeza de las flores para satisfacer las necesidades del cliente.',
-      image: 'https://picsum.photos/id/302/600/400',
+      image: 'images/about/vision.jpg',
     },
     {
       title: 'Valores',
@@ -34,7 +34,7 @@ const AboutPage = () => {
         'Respeto',
         'Puntualidad'
       ],
-      image: 'https://picsum.photos/id/303/600/400',
+      image: 'images/about/values.jpg',
     },
     {
       title: 'Información de Contacto',
@@ -43,7 +43,7 @@ const AboutPage = () => {
         phone: '(829) 228-7796',
         email: 'togetherbebloom333@gmail.com',
       },
-      image: 'https://picsum.photos/id/304/600/400',
+      image: 'images/about/map.jpg',
     },
   ];
 
@@ -60,7 +60,7 @@ const AboutPage = () => {
   };
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-4 max-w-screen-md">
       <h1 className="text-2xl font-semibold mb-4 text-center">Conócenos</h1>
 
       {cardData.map((card, index) => (

@@ -149,7 +149,7 @@ const productsData: Product[] = [
   },
   {
     id: 17,
-    name: 'Triple corona legendaria',
+    name: 'Corona Fúnebre',
     price: 5000.00,
     image: '/images/catalog/17.jpg',
     type: 'Arreglo fúnebre',
